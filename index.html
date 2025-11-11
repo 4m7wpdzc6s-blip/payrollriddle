@@ -26,12 +26,32 @@
       font-size: 1.5em;
     }
 
-    .hidden-corner {
+    .corner-text {
       position: absolute;
-      top: 5px;
-      right: 10px;
       font-size: 0.1em;
-      color: #cccccc;
+      color: #cccccc; /* Medium-light grey */
+    }
+
+    .top-right {
+      top: 15px;
+      right: 20px;
+      text-align: right;
+      white-space: pre-line;
+    }
+
+    .top-left {
+      top: 15px;
+      left: 20px;
+    }
+
+    .bottom-right {
+      bottom: 15px;
+      right: 20px;
+    }
+
+    .bottom-left {
+      bottom: 15px;
+      left: 20px;
     }
   </style>
 </head>
@@ -40,6 +60,13 @@
     Where is CAE?
     <span class="magnifier">🔍</span>
   </div>
-  <div class="hidden-corner">CAE - You Found me! Go and let Raquel know </div>
+
+  <div class="corner-text top-right">
+    &gt;CAE - You found me!
+    Now go and claim your chocolate&lt;
+  </div>
+  <div class="corner-text top-left">Not Here</div>
+  <div class="corner-text bottom-right">Not Here</div>
+  <div class="corner-text bottom-left">Not Here</div>
 </body>
 </html>
